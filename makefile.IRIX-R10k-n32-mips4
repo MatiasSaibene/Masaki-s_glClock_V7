@@ -1,0 +1,65 @@
+#                  makefile for SGI R1000 n32 mips4
+#
+#		make clean
+#		make all
+#
+#      February 2000 by Masa (Masaki Kawase) <masa@daionet.gr.jp>
+#
+
+
+         TARGET = glclock
+    TARGET_MARK = glclockmark
+
+
+       COMPILER = CC -c
+         LINKER = CC
+            OPT = -O2 -n32 -mips4 -r10000
+
+   INCLUDE_PATH =
+       LIB_PATH =
+
+           LIBS = -lglut -lGLU -lGL -lXmu -lXext -lX11 -lfastm -lm
+      MARK_LIBS = -lfastm -lm
+
+
+  COMPILE = $(COMPILER) $(OPT) $(INCLUDE_PATH)
+     LINK = $(LINKER) $(OPT) $(LIB_PATH)
+
+
+$(TARGET) : main.o glclock.o GLObject.o GLextensions.o PnmIO.o MString.o
+	$(LINK) -o $(TARGET) main.o glclock.o GLObject.o GLextensions.o PnmIO.o MString.o $(LIBS)
+
+
+$(TARGET_MARK) : glclockmark.o MString.o
+	$(LINK) -o $(TARGET_MARK) glclockmark.o MString.o $(MARK_LIBS)
+
+glclockmark.o : glclockmark.cpp glclockmark.H
+	$(COMPILE) glclockmark.cpp
+
+
+main.o : main.cpp glclock.H
+	$(COMPILE) main.cpp
+
+
+glclock.o : glclock.cpp glclock.H GLObject.H Option.H
+	$(COMPILE) glclock.cpp
+
+
+GLObject.o : GLObject.cpp GLObject.H GLextensions.H PnmIO.H
+	$(COMPILE) GLObject.cpp
+
+GLextensions.o : GLextensions.cpp GLextensions.H MString.H Math3D.H
+	$(COMPILE) GLextensions.cpp
+
+PnmIO.o : PnmIO.cpp PnmIO.H MString.H
+	$(COMPILE) PnmIO.cpp
+
+MString.o : MString.cpp MString.H Define.H
+	$(COMPILE) MString.cpp
+
+
+all : $(TARGET) $(TARGET_MARK)
+
+
+clean :
+	rm -f *.o $(TARGET) $(TARGET_MARK) *~ #*#

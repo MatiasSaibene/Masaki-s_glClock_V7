@@ -1,0 +1,13 @@
+#!/bin/sh
+
+echo Testing default window size.
+glclockmark $*
+
+echo Testing VGA window size.
+glclockmark $* -VGA
+
+echo Testing SVGA window size.
+glclockmark $* -SVGA
+
+echo Testing XGA window size.
+glclockmark $* -XGA

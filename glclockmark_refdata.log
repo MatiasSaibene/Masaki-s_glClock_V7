@@ -1,0 +1,501 @@
+glclock-6.0 Beta
+February 2000 by Masa (Masaki Kawase)
+<E-Mail: masa@daionet.gr.jp>
+<http://www.daionet.gr.jp/~masa/>
+
+OpenGL client (compile-time) informations.
+  Compiled base: OpenGL-1.1
+
+  Supoortable version dependence capabilities (depend on run-time OpenGL version):
+	OpenGL-1.1 Texture Object	 ... -e, -C, -r
+	OpenGL-1.1 Polygon Offset	 ... -zoffset with -s 3, -r, -D
+	OpenGL-1.2 Separate Specular Color	 ... -s 3
+
+  Supoortable extensions (depend on run-time OpenGL extensions):
+	GL_ARB_multitexture		 ... -r 2
+	GL_EXT_multitexture		 ... -r 2
+	GL_SGIS_multitexture		 ... -r 2
+	GL_ARB_separate_specular_color	 ... -s 3
+	GL_EXT_separate_specular_color	 ... -s 3
+	GL_EXT_texture_object		 ... -e, -C, -r
+	GL_EXT_polygon_offset		 ... -zoffset with -s 3, -r, -D
+	GL_EXT_texture_cube_map		 ... -FAKE with -e, -C, -r
+	GL_NV_texgen_reflection		 ... -FAKE with -e, -C, -r
+	GL_EXT_texture_filter_anisotropic	 ... -anisotropy with -e, -s, -C, -r
+
+OpenGL server (run-time) informations.
+  Vendor    : NVIDIA Corporation
+  Renderer  : RIVA TNT/PCI
+  Version   : 1.1.4
+  Extensions:
+	GL_ARB_multitexture	GL_EXT_abgr	GL_EXT_bgra
+	GL_EXT_clip_volume_hint	GL_EXT_compiled_vertex_array
+	GL_EXT_fog_coord	GL_EXT_packed_pixels
+	GL_EXT_point_parameters	GL_EXT_secondary_color
+	GL_EXT_separate_specular_color	GL_EXT_stencil_wrap
+	GL_EXT_texture_env_add	GL_EXT_texture_env_combine
+	GL_EXT_texture_object	GL_EXT_vertex_array
+	GL_EXT_vertex_weighting	GL_KTX_buffer_region	GL_NV_fog_distance
+	GL_NV_texgen_reflection	GL_NV_texture_env_combine4
+	GL_SGIS_multitexture	GL_WIN_swap_hint	WGL_EXT_swap_control
+
+  Max texture size: 1024x1024
+
+Prohibited capabilities: None
+GL_ARB_multitexture (max texture units: 2)  OK.
+GL_EXT_separate_specular_color  OK.
+OpenGL-1.1 Texture Object  OK.
+OpenGL-1.1 Polygon Offset  OK.
+GL_NV_texgen_reflection  OK.
+
+Color buffer: 320 x 320 (R:5 G:6 B:5 + Z:16)
+Timer resolution (m-sec): 1
+
+#1.01 1 Directional Light.
+   7.578 kTris/Frame - Double Buffering
+  43.55421 FPS    330.053769 kTPS   at    7.578 kTPF
+
+#1.02 2 Directional Lights.
+   7.578 kTris/Frame - Double Buffering
+  38.06751 FPS    288.475616 kTPS   at    7.578 kTPF
+
+#1.03 4 Directional Lights.
+   7.578 kTris/Frame - Double Buffering
+  32.15243 FPS    243.651114 kTPS   at    7.578 kTPF
+
+#1.04 8 Directional Lights.
+   7.578 kTris/Frame - Double Buffering
+  23.35781 FPS    177.005515 kTPS   at    7.578 kTPF
+
+#1.05 1 Directional Light with Local View.
+   7.578 kTris/Frame - Double Buffering
+  34.60523 FPS    262.238430 kTPS   at    7.578 kTPF
+
+#1.06 2 Directional Lights with Local Viewer.
+   7.578 kTris/Frame - Double Buffering
+  25.46183 FPS    192.949715 kTPS   at    7.578 kTPF
+
+#1.07 4 Directional Lights with Local Viewer.
+   7.578 kTris/Frame - Double Buffering
+  16.89737 FPS    128.048257 kTPS   at    7.578 kTPF
+
+#1.08 8 Directional Lights with Local Viewer.
+   7.578 kTris/Frame - Double Buffering
+   9.83867 FPS     74.557417 kTPS   at    7.578 kTPF
+
+#1.09 1 Point Light.
+   7.578 kTris/Frame - Double Buffering
+  33.37311 FPS    252.901455 kTPS   at    7.578 kTPF
+
+#1.10 2 Point Lights.
+   7.578 kTris/Frame - Double Buffering
+  24.71106 FPS    187.260423 kTPS   at    7.578 kTPF
+
+#1.11 4 Point Lights.
+   7.578 kTris/Frame - Double Buffering
+  16.08074 FPS    121.859865 kTPS   at    7.578 kTPF
+
+#1.12 8 Point Lights.
+   7.578 kTris/Frame - Double Buffering
+   9.43970 FPS     71.534061 kTPS   at    7.578 kTPF
+
+#1.13 1 Point Light with Local Viewer.
+   7.578 kTris/Frame - Double Buffering
+  30.39186 FPS    230.309532 kTPS   at    7.578 kTPF
+
+#1.14 2 Point Lights with Local Viewer.
+   7.578 kTris/Frame - Double Buffering
+  21.78445 FPS    165.082532 kTPS   at    7.578 kTPF
+
+#1.15 4 Point Lights with Local Viewer.
+   7.578 kTris/Frame - Double Buffering
+  13.68222 FPS    103.683838 kTPS   at    7.578 kTPF
+
+#1.16 8 Point Lights with Local Viewer.
+   7.578 kTris/Frame - Double Buffering
+   7.80140 FPS     59.119018 kTPS   at    7.578 kTPF
+
+#1.17 1 Spot Light.
+   7.578 kTris/Frame - Double Buffering
+  31.06902 FPS    235.441041 kTPS   at    7.578 kTPF
+
+#1.18 2 Spot Lights.
+   7.578 kTris/Frame - Double Buffering
+  22.36316 FPS    169.467991 kTPS   at    7.578 kTPF
+
+#1.19 4 Spot Lights.
+   7.578 kTris/Frame - Double Buffering
+  14.14698 FPS    107.205840 kTPS   at    7.578 kTPF
+
+#1.20 8 Spot Lights.
+   7.578 kTris/Frame - Double Buffering
+   8.13053 FPS     61.613149 kTPS   at    7.578 kTPF
+
+#1.21 1 Spot Light with Local Viewer.
+   7.578 kTris/Frame - Double Buffering
+  28.59740 FPS    216.711072 kTPS   at    7.578 kTPF
+
+#1.22 2 Spot Lights with Local Viewer.
+   7.578 kTris/Frame - Double Buffering
+  19.90117 FPS    150.811072 kTPS   at    7.578 kTPF
+
+#1.23 4 Spot Lights with Local Viewer.
+   7.578 kTris/Frame - Double Buffering
+  12.24698 FPS     92.807629 kTPS   at    7.578 kTPF
+
+#1.24 8 Spot Lights with Local Viewer.
+   7.578 kTris/Frame - Double Buffering
+   6.85387 FPS     51.938593 kTPS   at    7.578 kTPF
+
+#1.01 1 Directional Light.
+   7.578 kTris/Frame - Single Buffering
+  43.17809 FPS    327.203538 kTPS   at    7.578 kTPF
+
+#1.02 2 Directional Lights.
+   7.578 kTris/Frame - Single Buffering
+  37.82749 FPS    286.656737 kTPS   at    7.578 kTPF
+
+#1.03 4 Directional Lights.
+   7.578 kTris/Frame - Single Buffering
+  31.78300 FPS    240.851543 kTPS   at    7.578 kTPF
+
+#1.04 8 Directional Lights.
+   7.578 kTris/Frame - Single Buffering
+  23.25591 FPS    176.233303 kTPS   at    7.578 kTPF
+
+#1.05 1 Directional Light with Local View.
+   7.578 kTris/Frame - Single Buffering
+  33.61938 FPS    254.767669 kTPS   at    7.578 kTPF
+
+#1.06 2 Directional Lights with Local Viewer.
+   7.578 kTris/Frame - Single Buffering
+  25.19853 FPS    190.954496 kTPS   at    7.578 kTPF
+
+#1.07 4 Directional Lights with Local Viewer.
+   7.578 kTris/Frame - Single Buffering
+  16.75799 FPS    126.992036 kTPS   at    7.578 kTPF
+
+#1.08 8 Directional Lights with Local Viewer.
+   7.578 kTris/Frame - Single Buffering
+   9.87972 FPS     74.868546 kTPS   at    7.578 kTPF
+
+#1.09 1 Point Light.
+   7.578 kTris/Frame - Single Buffering
+  32.99208 FPS    250.013945 kTPS   at    7.578 kTPF
+
+#1.10 2 Point Lights.
+   7.578 kTris/Frame - Single Buffering
+  24.46529 FPS    185.397963 kTPS   at    7.578 kTPF
+
+#1.11 4 Point Lights.
+   7.578 kTris/Frame - Single Buffering
+  15.99294 FPS    121.194515 kTPS   at    7.578 kTPF
+
+#1.12 8 Point Lights.
+   7.578 kTris/Frame - Single Buffering
+   9.39806 FPS     71.218473 kTPS   at    7.578 kTPF
+
+#1.13 1 Point Light with Local Viewer.
+   7.578 kTris/Frame - Single Buffering
+  30.16417 FPS    228.584109 kTPS   at    7.578 kTPF
+
+#1.14 2 Point Lights with Local Viewer.
+   7.578 kTris/Frame - Single Buffering
+  21.63875 FPS    163.978461 kTPS   at    7.578 kTPF
+
+#1.15 4 Point Lights with Local Viewer.
+   7.578 kTris/Frame - Single Buffering
+  13.58914 FPS    102.978508 kTPS   at    7.578 kTPF
+
+#1.16 8 Point Lights with Local Viewer.
+   7.578 kTris/Frame - Single Buffering
+   7.79185 FPS     59.046673 kTPS   at    7.578 kTPF
+
+#1.17 1 Spot Light.
+   7.578 kTris/Frame - Single Buffering
+  30.80322 FPS    233.426776 kTPS   at    7.578 kTPF
+
+#1.18 2 Spot Lights.
+   7.578 kTris/Frame - Single Buffering
+  22.19280 FPS    168.177058 kTPS   at    7.578 kTPF
+
+#1.19 4 Spot Lights.
+   7.578 kTris/Frame - Single Buffering
+  14.10364 FPS    106.877373 kTPS   at    7.578 kTPF
+
+#1.20 8 Spot Lights.
+   7.578 kTris/Frame - Single Buffering
+   8.10539 FPS     61.422650 kTPS   at    7.578 kTPF
+
+#1.21 1 Spot Light with Local Viewer.
+   7.578 kTris/Frame - Single Buffering
+  28.29607 FPS    214.427647 kTPS   at    7.578 kTPF
+
+#1.22 2 Spot Lights with Local Viewer.
+   7.578 kTris/Frame - Single Buffering
+  19.82764 FPS    150.253890 kTPS   at    7.578 kTPF
+
+#1.23 4 Spot Lights with Local Viewer.
+   7.578 kTris/Frame - Single Buffering
+  12.21422 FPS     92.559393 kTPS   at    7.578 kTPF
+
+#1.24 8 Spot Lights with Local Viewer.
+   7.578 kTris/Frame - Single Buffering
+   6.84353 FPS     51.860296 kTPS   at    7.578 kTPF
+
+#2.01 5 Directional Lights.
+   7.578 kTris/Frame - Double Buffering
+  31.52116 FPS    238.867323 kTPS   at    7.578 kTPF
+
+#2.02 5 Directional Lights with Local Viewer.
+   7.578 kTris/Frame - Double Buffering
+  17.23275 FPS    130.589771 kTPS   at    7.578 kTPF
+
+#2.03 5 Point Lights.
+   7.578 kTris/Frame - Double Buffering
+  16.78089 FPS    127.165570 kTPS   at    7.578 kTPF
+
+#2.04 5 Point Lights with Local Viewer.
+   7.578 kTris/Frame - Double Buffering
+  14.04192 FPS    106.409686 kTPS   at    7.578 kTPF
+
+#2.05 5 Spot Lights.
+   7.578 kTris/Frame - Double Buffering
+  14.87863 FPS    112.750228 kTPS   at    7.578 kTPF
+
+#2.06 5 Spot Lights with Local Viewer.
+   7.578 kTris/Frame - Double Buffering
+  12.73471 FPS     96.503657 kTPS   at    7.578 kTPF
+
+#2.01 5 Directional Lights.
+   7.578 kTris/Frame - Single Buffering
+  31.39764 FPS    237.931299 kTPS   at    7.578 kTPF
+
+#2.02 5 Directional Lights with Local Viewer.
+   7.578 kTris/Frame - Single Buffering
+  17.31836 FPS    131.238505 kTPS   at    7.578 kTPF
+
+#2.03 5 Point Lights.
+   7.578 kTris/Frame - Single Buffering
+  16.61562 FPS    125.913165 kTPS   at    7.578 kTPF
+
+#2.04 5 Point Lights with Local Viewer.
+   7.578 kTris/Frame - Single Buffering
+  14.06056 FPS    106.550904 kTPS   at    7.578 kTPF
+
+#2.05 5 Spot Lights.
+   7.578 kTris/Frame - Single Buffering
+  14.85210 FPS    112.549201 kTPS   at    7.578 kTPF
+
+#2.06 5 Spot Lights with Local Viewer.
+   7.578 kTris/Frame - Single Buffering
+  12.72408 FPS     96.423108 kTPS   at    7.578 kTPF
+
+#2.11 5 Directional Lights.
+1-pass (GL_EXT_separate_specular_color) -    7.578 kTris/Frame - Double Buffering
+  29.58895 FPS    224.225100 kTPS   at    7.578 kTPF
+
+#2.12 5 Directional Lights with Local Viewer.
+1-pass (GL_EXT_separate_specular_color) -    7.578 kTris/Frame - Double Buffering
+  16.91683 FPS    128.195732 kTPS   at    7.578 kTPF
+
+#2.13 5 Point Lights.
+1-pass (GL_EXT_separate_specular_color) -    7.578 kTris/Frame - Double Buffering
+  16.30183 FPS    123.535261 kTPS   at    7.578 kTPF
+
+#2.14 5 Point Lights with Local Viewer.
+1-pass (GL_EXT_separate_specular_color) -    7.578 kTris/Frame - Double Buffering
+  13.60097 FPS    103.068164 kTPS   at    7.578 kTPF
+
+#2.15 5 Spot Lights.
+1-pass (GL_EXT_separate_specular_color) -    7.578 kTris/Frame - Double Buffering
+  14.42943 FPS    109.346253 kTPS   at    7.578 kTPF
+
+#2.16 5 Spot Lights with Local Viewer.
+1-pass (GL_EXT_separate_specular_color) -    7.578 kTris/Frame - Double Buffering
+  12.31299 FPS     93.307815 kTPS   at    7.578 kTPF
+
+#2.11 5 Directional Lights.
+1-pass (GL_EXT_separate_specular_color) -    7.578 kTris/Frame - Single Buffering
+  29.24469 FPS    221.616251 kTPS   at    7.578 kTPF
+
+#2.12 5 Directional Lights with Local Viewer.
+1-pass (GL_EXT_separate_specular_color) -    7.578 kTris/Frame - Single Buffering
+  16.80877 FPS    127.376886 kTPS   at    7.578 kTPF
+
+#2.13 5 Point Lights.
+1-pass (GL_EXT_separate_specular_color) -    7.578 kTris/Frame - Single Buffering
+  16.23576 FPS    123.034593 kTPS   at    7.578 kTPF
+
+#2.14 5 Point Lights with Local Viewer.
+1-pass (GL_EXT_separate_specular_color) -    7.578 kTris/Frame - Single Buffering
+  13.56601 FPS    102.803193 kTPS   at    7.578 kTPF
+
+#2.15 5 Spot Lights.
+1-pass (GL_EXT_separate_specular_color) -    7.578 kTris/Frame - Single Buffering
+  14.37127 FPS    108.905477 kTPS   at    7.578 kTPF
+
+#2.16 5 Spot Lights with Local Viewer.
+1-pass (GL_EXT_separate_specular_color) -    7.578 kTris/Frame - Single Buffering
+  12.27954 FPS     93.054325 kTPS   at    7.578 kTPF
+
+#3.01 Nearest Point Sampling.
+  20.230 kTris/Frame - Double Buffering
+  33.23660 FPS    672.376427 kTPS   at   20.230 kTPF
+
+#3.02 Mip-Mapping.
+  20.230 kTris/Frame - Double Buffering
+  33.31601 FPS    673.982848 kTPS   at   20.230 kTPF
+
+#3.03 Bi-Linear Filtering.
+  20.230 kTris/Frame - Double Buffering
+  33.22960 FPS    672.234777 kTPS   at   20.230 kTPF
+
+#3.04 Bi-Linear Filtering with Mip-Mapping.
+  20.230 kTris/Frame - Double Buffering
+  33.33348 FPS    674.336260 kTPS   at   20.230 kTPF
+
+#3.05 Tri-Linear Filtering (Bi-Linear with Mip-Map Linear).
+  20.230 kTris/Frame - Double Buffering
+  33.31615 FPS    673.985766 kTPS   at   20.230 kTPF
+
+#3.01 Nearest Point Sampling.
+  20.230 kTris/Frame - Single Buffering
+  32.96265 FPS    666.834421 kTPS   at   20.230 kTPF
+
+#3.02 Mip-Mapping.
+  20.230 kTris/Frame - Single Buffering
+  32.98969 FPS    667.381443 kTPS   at   20.230 kTPF
+
+#3.03 Bi-Linear Filtering.
+  20.230 kTris/Frame - Single Buffering
+  33.00694 FPS    667.730430 kTPS   at   20.230 kTPF
+
+#3.04 Bi-Linear Filtering with Mip-Mapping.
+  20.230 kTris/Frame - Single Buffering
+  32.98983 FPS    667.384281 kTPS   at   20.230 kTPF
+
+#3.05 Tri-Linear Filtering (Bi-Linear with Mip-Map Linear).
+  20.230 kTris/Frame - Single Buffering
+  32.93934 FPS    666.362795 kTPS   at   20.230 kTPF
+
+#4.01 Sphere Mapping.
+   7.814 kTris/Frame - Double Buffering
+  39.71806 FPS    310.356902 kTPS   at    7.814 kTPF
+
+#4.01 Sphere Mapping.
+   7.814 kTris/Frame - Single Buffering
+  39.50877 FPS    308.721502 kTPS   at    7.814 kTPF
+
+#4.02 Double Sided Transparency Sphere Mapping without Z-Buffer.
+   7.814 kTris/Frame - Double Buffering
+  41.01761 FPS    320.511630 kTPS   at    7.814 kTPF
+
+#4.02 Double Sided Transparency Sphere Mapping without Z-Buffer.
+   7.814 kTris/Frame - Single Buffering
+  40.65068 FPS    317.644376 kTPS   at    7.814 kTPF
+
+#5.01 4 Sampling Additive-Blended Object Motion-Blur without Z-Buffer (total 4-pass).
+  10.904 kTris/Frame - Double Buffering
+  22.33413 FPS    243.531333 kTPS   at   10.904 kTPF
+
+#5.01 4 Sampling Additive-Blended Object Motion-Blur without Z-Buffer (total 4-pass).
+  10.904 kTris/Frame - Single Buffering
+  22.07510 FPS    240.706841 kTPS   at   10.904 kTPF
+
+#5.02 4 Sampling Alpha-Blended Scene Anti-Aliasing with Z-Buffer Mask (total 7-pass).
+  19.082 kTris/Frame - Double Buffering
+  12.41083 FPS    236.823429 kTPS   at   19.082 kTPF
+
+#5.02 4 Sampling Alpha-Blended Scene Anti-Aliasing with Z-Buffer Mask (total 7-pass).
+  19.082 kTris/Frame - Single Buffering
+  12.21751 FPS    233.134521 kTPS   at   19.082 kTPF
+
+#5.03 7 Sampling Alpha-Blended Depth of Field Blur with Z-Buffer Mask (total 13-pass).
+  35.438 kTris/Frame - Double Buffering
+   6.77201 FPS    239.986523 kTPS   at   35.438 kTPF
+
+#5.03 7 Sampling Alpha-Blended Depth of Field Blur with Z-Buffer Mask (total 13-pass).
+  35.438 kTris/Frame - Single Buffering
+   6.61157 FPS    234.300846 kTPS   at   35.438 kTPF
+
+#6.01 Non-Fogging.
+ 141.686 kTris/Frame - Double Buffering
+   7.59392 FPS   1075.952178 kTPS   at  141.686 kTPF
+
+#6.02 Linear Equation Fogging.
+ 141.686 kTris/Frame - Double Buffering
+   7.39286 FPS   1047.465319 kTPS   at  141.686 kTPF
+
+#6.03 1 Exponential Equation Fogging.
+ 141.686 kTris/Frame - Double Buffering
+   5.57152 FPS    789.405925 kTPS   at  141.686 kTPF
+
+#6.04 2 Exponential Equation Fogging.
+ 141.686 kTris/Frame - Double Buffering
+   5.55797 FPS    787.486301 kTPS   at  141.686 kTPF
+
+#6.01 Non-Fogging.
+ 141.686 kTris/Frame - Single Buffering
+   7.61697 FPS   1079.217329 kTPS   at  141.686 kTPF
+
+#6.02 Linear Equation Fogging.
+ 141.686 kTris/Frame - Single Buffering
+   7.29511 FPS   1033.615318 kTPS   at  141.686 kTPF
+
+#6.03 1 Exponential Equation Fogging.
+ 141.686 kTris/Frame - Single Buffering
+   5.50017 FPS    779.297399 kTPS   at  141.686 kTPF
+
+#6.04 2 Exponential Equation Fogging.
+ 141.686 kTris/Frame - Single Buffering
+   5.49121 FPS    778.027142 kTPS   at  141.686 kTPF
+
+#6.11 Non-Fogging.
+ 141.686 kTris/Frame - Double Buffering
+   7.10480 FPS   1006.650221 kTPS   at  141.686 kTPF
+
+#6.12 Linear Equation Fogging.
+ 141.686 kTris/Frame - Double Buffering
+   6.38659 FPS    904.890374 kTPS   at  141.686 kTPF
+
+#6.13 1 Exponential Equation Fogging.
+ 141.686 kTris/Frame - Double Buffering
+   5.02394 FPS    711.822396 kTPS   at  141.686 kTPF
+
+#6.14 2 Exponential Equation Fogging.
+ 141.686 kTris/Frame - Double Buffering
+   5.01489 FPS    710.539431 kTPS   at  141.686 kTPF
+
+#6.11 Non-Fogging.
+ 141.686 kTris/Frame - Single Buffering
+   6.92775 FPS    981.565310 kTPS   at  141.686 kTPF
+
+#6.12 Linear Equation Fogging.
+ 141.686 kTris/Frame - Single Buffering
+   6.31725 FPS    895.065353 kTPS   at  141.686 kTPF
+
+#6.13 1 Exponential Equation Fogging.
+ 141.686 kTris/Frame - Single Buffering
+   4.96702 FPS    703.756629 kTPS   at  141.686 kTPF
+
+#6.14 2 Exponential Equation Fogging.
+ 141.686 kTris/Frame - Single Buffering
+   4.96086 FPS    702.883888 kTPS   at  141.686 kTPF
+
+#7.01 5 Directional Lights, Multi-Texture (Solid Texture, Specular Map), Blending, Linear Fog.
+max 1-pass 2-texturing (GL_ARB_multitexture) -    7.814 kTris/Frame - Double Buffering
+  23.04151 FPS    180.046322 kTPS   at    7.814 kTPF
+
+#7.01 5 Directional Lights, Multi-Texture (Solid Texture, Specular Map), Blending, Linear Fog.
+max 1-pass 2-texturing (GL_ARB_multitexture) -    7.814 kTris/Frame - Single Buffering
+  22.93581 FPS    179.220420 kTPS   at    7.814 kTPF
+
+#7.02 5 Point Lights with local Viewer, Multi-Texture (Solid Texture, Specular Map), Blending, Reflection, 1 Exponential Fog, High Detail.
+max 1-pass 2-texturing (GL_ARB_multitexture) -   21.516 kTris/Frame - Double Buffering
+   6.71479 FPS    144.475513 kTPS   at   21.516 kTPF
+
+#7.02 5 Point Lights with local Viewer, Multi-Texture (Solid Texture, Specular Map), Blending, Reflection, 1 Exponential Fog, High Detail.
+max 1-pass 2-texturing (GL_ARB_multitexture) -   21.516 kTris/Frame - Single Buffering
+   6.66890 FPS    143.488013 kTPS   at   21.516 kTPF
+
